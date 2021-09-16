@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="shortcut icon" href="bg1.jpg" type="image/x-icon">
+
+    <title>Grocery List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container main my-4">
+        <h1 class="text-center my-4">Grocery List App</h1>
+
+        <div class="row  gx-5">
+            <div class="col-md-6 order-1 order-lg-1 img-box">
+                <img src="bg1.jpg" height="400px" width="100%" alt="">
+            </div>
+            <div class="col-md-6 p-5 order-1 order-lg-2">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="name@example.com" id="item-name-input">
+                    <label for="floatingInput">Item Name</label>
+                </div>
+                <div class="mb-3 row">
+                    <div class="form-floating col">
+                        <input type="number" class="form-control" id="item-price-input" placeholder="Price">
+                        <label for="floatingPassword">Price</label>
+                    </div>
+                    <div class="form-floating col">
+                        <input type="number" class="form-control" id="item-qty-input" placeholder="Qunatity" value="1"
+                            min="1" max="20">
+                        <label for="floatingPassword">Qunatity</label>
+
+                    </div>
+                </div>
+                <button class="btn btn-primary my-2" onclick="insertItem()" id="addbtn">Add</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-4 app">
+        <table class="table table-responsive caption-top" id="table">
+            <caption> List of Items</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Title</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        <h1 data-ns-test="grandTotal" id="grandTotal">Total Amount: &#8377; 0</h1>
+        <h2 id="in-words"></h2>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

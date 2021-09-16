@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #11998e; 
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); */
+}
+.main {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+}
+
+.app {
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: lightblue;
+}
+caption {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
+
+tr:nth-child(odd) {
+  font-weight: 600;
+  background-color: #ccc;
+}
+tr:nth-child(even) {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .app,
+  .main {
+    width: 97%;
+  }
+  .img-box img {
+    width: 100%;
+    height: 200px;
+  }
+}
